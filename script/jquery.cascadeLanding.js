@@ -79,14 +79,14 @@
 						{
 							$this.showPreloader(true);
 							
-							$.post('page/'+selectedPage,{},function(page) 
+							$.get('page/'+selectedPage,{},function(page) 
 							{			
 								$('.cascade-window-content').html(page);
-								scrollbar=$('.cascade-window-content').jScrollPane({maintainPosition: false}).data('jsp');
+								scrollbar=$('.cascade-window-content').jScrollPane({maintainPosition:false,autoReinitialise:true}).data('jsp');
 								
 								$this.showPreloader(false);	
 								$this.showNavigation(true);
-
+	
 								$.getScript('script/page.js');
 								
 								openEnable=true;
