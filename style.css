@@ -5,7 +5,8 @@
     font-size: 14px;
     line-height: 15px;
     color: #444444;
-    background-image: url("\image\sample\futur.jpg");
+    background-image: url("image\sample\futur.jpg");
+    background: url("image\sample\futur.jpg");
 }
 
 h1
@@ -15,4 +16,14 @@ h1
 
 .center{
     text-align:center;
+}
+
+.site-header {
+    min-width: 550px;
+    height: 186px;
+    margin-bottom: 70px;
+    padding-top: 30px;
+    background: #847462 no-repeat center url("image\sample\futur.jpg");
+    background-size: cover;
+    color: #ffffff;
 }
